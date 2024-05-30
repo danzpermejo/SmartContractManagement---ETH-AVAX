@@ -1,34 +1,23 @@
-# Module 2 | Smart Contract Management - ETH + AVAX
+# Module 2 | Project: Function Frontend - Crypto Price Tracker
 
-While MetaMask isn't for directly controlling smart contracts, it acts as a bridge. You connect it to dApps (applications built on blockchain technology) that use smart contracts. MetaMask lets you see what the dApp wants to do and securely confirm or reject these actions, essentially giving you control over your interaction with smart contracts.
+The Crypto Price Tracker is a React-based web application designed to manage the pricing of various items in Ethereum (ETH). Users can input an item's name and its price in ETH, and then set, retrieve, or reset the price using corresponding buttons. The application maintains an internal state to store the prices of items and provides real-time feedback to the user through messages displayed on the interface. The user-friendly interface ensures that item prices are set accurately and can be easily managed, making it a practical tool for tracking and managing crypto-based prices.
 
 ## Description
 
-My smart contract empowers you to manage your ETH conveniently through MetaMask. Deposit ETH directly from your wallet and withdraw it back with ease. This secure smart contract ensures transparent transactions on the blockchain, giving you complete control over your funds.
+It is designed to manage item pricing in Ethereum (ETH) on the blockchain. It maintains a mapping of item names to their corresponding prices, allowing users to set, get, and reset prices securely. Users can set prices for items, ensuring that the price is greater than zero, and an event is emitted to log each price-setting action. The contract also allows users to retrieve the price of any item and reset the price back to zero, with corresponding events emitted for these actions as well. Additionally, it includes a function to check the validity of an item's price, ensuring it is set and does not exceed 1000 ETH. This smart contract leverages the transparency, immutability, and decentralization of the Ethereum blockchain to provide a reliable way to track and manage item prices.
 
 ## Getting Started
 
-### Installing
+### Functionality
 
-* I cloned the github repo to and follow the instructions from the readme file.
-* I installed metamask wallet and setup it to connect from localhost.
+* Set Item Price
+* Get Item Price
+* Reset Item Price
 
-### Executing program
+### Crypto Price Tracker
 
-* To run the program, first I add or create a network in metamask that I named it Localhost 8545.
-* Lastly I copied my ip address from vs code terminal and pasted it from the network I created.
-* Also to have an ETH I copied the private key from the account 0 in my vs code so that my metamask wallet have an ETH and I successfully connect it.
-```
-Account #0: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (10000 ETH)
-Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
-```
+The input fields for "Price in ETH" and "Max Price in ETH" have distinct roles. "Price in ETH" is the actual price to be set for an item and stored in the itemPrices state, representing the item's cost. "Max Price in ETH" is an optional limit to ensure the item's price doesn't exceed a specified threshold, used to validate the entered price. If the price exceeds this maximum, an error message is displayed, and the price is not set.
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
